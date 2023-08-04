@@ -1,0 +1,29 @@
+|TB_CLA_4Bit
+
+
+|TB_CLA_4Bit|CLA_4Bit:cla
+a[0] => ci.IN0
+a[0] => ci.IN0
+a[1] => ci.IN0
+a[1] => ci.IN0
+a[2] => ci.IN0
+a[2] => ci.IN0
+a[3] => cout.IN0
+a[3] => s.IN0
+b[0] => ci.IN1
+b[0] => ci.IN1
+b[1] => ci.IN1
+b[1] => ci.IN1
+b[2] => ci.IN1
+b[2] => ci.IN1
+b[3] => cout.IN1
+b[3] => s.IN1
+cin => ci.IN1
+cin => s.IN1
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
