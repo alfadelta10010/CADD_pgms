@@ -1,7 +1,11 @@
-|D_FF_P_SNR
-d => q.DATAB
-clk => q~reg0.CLK
-reset => q.OUTPUTSELECT
-q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|up_count_mod10
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

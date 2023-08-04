@@ -1,5 +1,5 @@
 Fitter report for Unit4
-Thu Aug  3 16:25:30 2023
+Fri Aug  4 15:08:08 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -27,19 +27,20 @@ Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
  19. Delay Chain Summary
  20. Pad To Core Delay Chain Fanout
  21. Control Signals
- 22. Routing Usage Summary
- 23. LAB Logic Elements
- 24. LAB-wide Signals
- 25. LAB Signals Sourced
- 26. LAB Signals Sourced Out
- 27. LAB Distinct Inputs
- 28. I/O Rules Summary
- 29. I/O Rules Details
- 30. I/O Rules Matrix
- 31. Fitter Device Options
- 32. Operating Settings and Conditions
- 33. Fitter Messages
- 34. Fitter Suppressed Messages
+ 22. Global & Other Fast Signals
+ 23. Routing Usage Summary
+ 24. LAB Logic Elements
+ 25. LAB-wide Signals
+ 26. LAB Signals Sourced
+ 27. LAB Signals Sourced Out
+ 28. LAB Distinct Inputs
+ 29. I/O Rules Summary
+ 30. I/O Rules Details
+ 31. I/O Rules Matrix
+ 32. Fitter Device Options
+ 33. Operating Settings and Conditions
+ 34. Fitter Messages
+ 35. Fitter Suppressed Messages
 
 
 
@@ -66,18 +67,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Aug  3 16:25:30 2023          ;
+; Fitter Status                      ; Successful - Fri Aug  4 15:08:08 2023          ;
 ; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                      ; Unit4                                          ;
-; Top-level Entity Name              ; D_FF_P_SNR                                     ;
+; Top-level Entity Name              ; up_count_mod10                                 ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C6GES                               ;
 ; Timing Models                      ; Preliminary                                    ;
-; Total logic elements               ; 3 / 49,760 ( < 1 % )                           ;
-;     Total combinational functions  ; 2 / 49,760 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 1 / 49,760 ( < 1 % )                           ;
-; Total registers                    ; 1                                              ;
-; Total pins                         ; 4 / 360 ( 1 % )                                ;
+; Total logic elements               ; 5 / 49,760 ( < 1 % )                           ;
+;     Total combinational functions  ; 5 / 49,760 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 4 / 49,760 ( < 1 % )                           ;
+; Total registers                    ; 4                                              ;
+; Total pins                         ; 5 / 360 ( 1 % )                                ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
@@ -351,191 +352,191 @@ https://fpgasoftware.intel.com/eula.
 ; Location     ;                ;              ; VGA_R[2]        ; PIN_Y2                ; QSF Assignment ;
 ; Location     ;                ;              ; VGA_R[3]        ; PIN_Y1                ; QSF Assignment ;
 ; Location     ;                ;              ; VGA_VS          ; PIN_N1                ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ADC_CLK_10      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[0]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[10]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[11]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[12]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[13]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[14]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[15]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[1]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[2]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[3]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[4]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[5]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[6]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[7]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[8]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_IO[9]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; ARDUINO_RESET_N ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[0]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[10]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[11]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[12]   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[1]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[2]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[3]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[4]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[5]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[6]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[7]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[8]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_ADDR[9]    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_BA[0]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_BA[1]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_CAS_N      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_CKE        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_CLK        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_CS_N       ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[0]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[10]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[11]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[12]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[13]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[14]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[15]     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[1]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[2]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[3]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[4]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[5]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[6]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[7]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[8]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_DQ[9]      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_LDQM       ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_RAS_N      ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_UDQM       ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; DRAM_WE_N       ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[10]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[11]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[12]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[13]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[14]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[15]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[16]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[17]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[18]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[19]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[20]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[21]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[22]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[23]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[24]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[25]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[26]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[27]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[28]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[29]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[30]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[31]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[32]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[33]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[34]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[35]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[8]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GPIO[9]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_CS_N    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_INT[1]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_INT[2]  ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_SCLK    ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_SDI     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; GSENSOR_SDO     ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX0[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX1[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX2[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX3[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX4[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; HEX5[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; KEY[0]          ; 3.3 V SCHMITT TRIGGER ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; KEY[1]          ; 3.3 V SCHMITT TRIGGER ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[8]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; LEDR[9]         ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; MAX10_CLK1_50   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; MAX10_CLK2_50   ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[0]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[1]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[2]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[3]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[4]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[5]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[6]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[7]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[8]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; SW[9]           ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_B[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_B[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_B[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_B[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_G[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_G[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_G[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_G[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_HS          ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_R[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_R[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_R[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_R[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
-; I/O Standard ; D_FF_P_SNR     ;              ; VGA_VS          ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ADC_CLK_10      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[0]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[10]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[11]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[12]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[13]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[14]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[15]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[1]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[2]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[3]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[4]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[5]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[6]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[7]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[8]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_IO[9]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; ARDUINO_RESET_N ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[0]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[10]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[11]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[12]   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[1]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[2]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[3]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[4]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[5]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[6]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[7]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[8]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_ADDR[9]    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_BA[0]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_BA[1]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_CAS_N      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_CKE        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_CLK        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_CS_N       ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[0]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[10]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[11]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[12]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[13]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[14]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[15]     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[1]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[2]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[3]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[4]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[5]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[6]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[7]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[8]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_DQ[9]      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_LDQM       ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_RAS_N      ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_UDQM       ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; DRAM_WE_N       ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[10]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[11]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[12]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[13]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[14]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[15]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[16]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[17]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[18]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[19]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[20]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[21]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[22]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[23]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[24]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[25]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[26]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[27]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[28]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[29]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[30]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[31]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[32]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[33]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[34]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[35]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[8]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GPIO[9]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_CS_N    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_INT[1]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_INT[2]  ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_SCLK    ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_SDI     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; GSENSOR_SDO     ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX0[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX1[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX2[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX3[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX4[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; HEX5[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; KEY[0]          ; 3.3 V SCHMITT TRIGGER ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; KEY[1]          ; 3.3 V SCHMITT TRIGGER ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[0]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[1]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[2]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[3]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[4]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[5]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[6]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[7]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[8]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; LEDR[9]         ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; MAX10_CLK1_50   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; MAX10_CLK2_50   ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[0]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[1]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[2]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[3]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[4]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[5]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[6]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[7]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[8]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; SW[9]           ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_B[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_B[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_B[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_B[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_G[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_G[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_G[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_G[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_HS          ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_R[0]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_R[1]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_R[2]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_R[3]        ; 3.3-V LVTTL           ; QSF Assignment ;
+; I/O Standard ; up_count_mod10 ;              ; VGA_VS          ; 3.3-V LVTTL           ; QSF Assignment ;
 +--------------+----------------+--------------+-----------------+-----------------------+----------------+
 
 
@@ -545,8 +546,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 30 ) ; 0.00 % ( 0 / 30 )          ; 0.00 % ( 0 / 30 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 30 ) ; 0.00 % ( 0 / 30 )          ; 0.00 % ( 0 / 30 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 39 ) ; 0.00 % ( 0 / 39 )          ; 0.00 % ( 0 / 39 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 39 ) ; 0.00 % ( 0 / 39 )          ; 0.00 % ( 0 / 39 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -569,7 +570,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 14 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 23 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -585,29 +586,29 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 3 / 49,760 ( < 1 % )  ;
-;     -- Combinational with no register       ; 2                     ;
-;     -- Register only                        ; 1                     ;
-;     -- Combinational with a register        ; 0                     ;
+; Total logic elements                        ; 5 / 49,760 ( < 1 % )  ;
+;     -- Combinational with no register       ; 1                     ;
+;     -- Register only                        ; 0                     ;
+;     -- Combinational with a register        ; 4                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 0                     ;
-;     -- 3 input functions                    ; 0                     ;
+;     -- 4 input functions                    ; 2                     ;
+;     -- 3 input functions                    ; 1                     ;
 ;     -- <=2 input functions                  ; 2                     ;
-;     -- Register only                        ; 1                     ;
+;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 2                     ;
+;     -- normal mode                          ; 5                     ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
-; Total registers*                            ; 1 / 51,509 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 1 / 49,760 ( < 1 % )  ;
+; Total registers*                            ; 4 / 51,509 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 4 / 49,760 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 3 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 2 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 4 / 360 ( 1 % )       ;
-;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
+; I/O pins                                    ; 5 / 360 ( 1 % )       ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
 ; M9Ks                                        ; 0 / 182 ( 0 % )       ;
@@ -617,8 +618,8 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; Total block memory implementation bits      ; 0 / 1,677,312 ( 0 % ) ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )       ;
 ; PLLs                                        ; 0 / 4 ( 0 % )         ;
-; Global signals                              ; 0                     ;
-;     -- Global clocks                        ; 0 / 20 ( 0 % )        ;
+; Global signals                              ; 1                     ;
+;     -- Global clocks                        ; 1 / 20 ( 5 % )        ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )         ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
 ; Remote update blocks                        ; 0 / 1 ( 0 % )         ;
@@ -628,8 +629,8 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.1%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 21                    ;
-; Average fan-out                             ; 0.68                  ;
+; Total fan-out                               ; 41                    ;
+; Average fan-out                             ; 1.05                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -642,32 +643,33 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 3 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 2                   ; 0                              ;
-;     -- Register only                        ; 1                   ; 0                              ;
-;     -- Combinational with a register        ; 0                   ; 0                              ;
+; Total logic elements                        ; 5 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 1                   ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
+;     -- Combinational with a register        ; 4                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 0                   ; 0                              ;
-;     -- 3 input functions                    ; 0                   ; 0                              ;
+;     -- 4 input functions                    ; 2                   ; 0                              ;
+;     -- 3 input functions                    ; 1                   ; 0                              ;
 ;     -- <=2 input functions                  ; 2                   ; 0                              ;
-;     -- Register only                        ; 1                   ; 0                              ;
+;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 2                   ; 0                              ;
+;     -- normal mode                          ; 5                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total registers                             ; 1                   ; 0                              ;
-;     -- Dedicated logic registers            ; 1 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 4                   ; 0                              ;
+;     -- Dedicated logic registers            ; 4 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 3 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 2 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 4                   ; 0                              ;
+; I/O pins                                    ; 5                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )     ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
+; Clock control block                         ; 1 / 24 ( 4 % )      ; 0 / 24 ( 0 % )                 ;
 ; User Flash Memory                           ; 1 / 1 ( 100 % )     ; 0 / 1 ( 0 % )                  ;
 ; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )     ; 0 / 2 ( 0 % )                  ;
 ;                                             ;                     ;                                ;
@@ -678,16 +680,16 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 27                  ; 8                              ;
-;     -- Registered Connections               ; 1                   ; 0                              ;
+;     -- Total Connections                    ; 47                  ; 8                              ;
+;     -- Registered Connections               ; 16                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
 ;     -- Top                                  ; 0                   ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
-;     -- Input Ports                          ; 3                   ; 0                              ;
-;     -- Output Ports                         ; 1                   ; 0                              ;
+;     -- Input Ports                          ; 1                   ; 0                              ;
+;     -- Output Ports                         ; 4                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Registered Ports                            ;                     ;                                ;
@@ -706,15 +708,13 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 +---------------------------------------------+---------------------+--------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                             ;
-+-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
-+-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk   ; V7    ; 3        ; 20           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; d     ; W7    ; 3        ; 24           ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; reset ; Y3    ; 3        ; 24           ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-+-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                            ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; clk  ; M8    ; 2        ; 0            ; 18           ; 14           ; 4                     ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
++------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -722,7 +722,10 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; q    ; W4    ; 3        ; 18           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; q[0] ; J11   ; 7        ; 49           ; 54           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; q[1] ; B12   ; 7        ; 49           ; 54           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; q[2] ; H12   ; 7        ; 49           ; 54           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; q[3] ; B11   ; 7        ; 49           ; 54           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -749,12 +752,12 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 +----------+-----------------+---------------+--------------+
 ; 1A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ;
 ; 1B       ; 4 / 24 ( 17 % ) ; 2.5V          ; --           ;
-; 2        ; 0 / 36 ( 0 % )  ; 2.5V          ; --           ;
-; 3        ; 4 / 48 ( 8 % )  ; 2.5V          ; --           ;
+; 2        ; 1 / 36 ( 3 % )  ; 2.5V          ; --           ;
+; 3        ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )  ; 2.5V          ; --           ;
 ; 6        ; 0 / 60 ( 0 % )  ; 2.5V          ; --           ;
-; 7        ; 0 / 52 ( 0 % )  ; 2.5V          ; --           ;
+; 7        ; 4 / 52 ( 8 % )  ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % ) ; 2.5V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
@@ -840,8 +843,8 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; B8       ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B11      ; 443        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B12      ; 441        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; B11      ; 443        ; 7        ; q[3]                                           ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; B12      ; 441        ; 7        ; q[1]                                           ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B13      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B14      ; 427        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B15      ; 423        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
@@ -973,7 +976,7 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; H9       ; 482        ; 8        ; ~ALTERA_nCONFIG~ / RESERVED_INPUT              ; input  ; 2.5 V Schmitt Trigger ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H10      ; 480        ; 8        ; ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT           ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H11      ; 470        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; H12      ; 444        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; H12      ; 444        ; 7        ; q[2]                                           ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H13      ; 432        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H14      ; 420        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; H15      ;            ; --       ; VCCA2                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -994,7 +997,7 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; J8       ; 4          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J9       ; 6          ; 1A       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J10      ; 468        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; J11      ; 446        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; J11      ; 446        ; 7        ; q[0]                                           ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; J12      ; 434        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J13      ; 422        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; J14      ; 368        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -1057,7 +1060,7 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; M5       ; 38         ; 1B       ; ~ALTERA_TDO~                                   ; output ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M6       ;            ; 1B       ; VCCIO1B                                        ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M7       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; M8       ; 72         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+; M8       ; 72         ; 2        ; clk                                            ; input  ; 2.5 V                 ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; M9       ; 74         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M10      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; M11      ;            ; --       ; VCC                                            ; power  ;                       ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -1188,7 +1191,7 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; V4       ; 125        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V5       ; 127        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; V7       ; 136        ; 3        ; clk                                            ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; V7       ; 136        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V8       ; 138        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V9       ; 160        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V10      ; 162        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1207,10 +1210,10 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; W1       ; 97         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W2       ; 99         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W3       ; 134        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; W4       ; 132        ; 3        ; q                                              ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; W4       ; 132        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W5       ; 124        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W6       ; 126        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; W7       ; 148        ; 3        ; d                                              ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; W7       ; 148        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W8       ; 150        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W9       ; 144        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; W10      ; 146        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1228,7 +1231,7 @@ The pin-out file can be found in /home/alphadelta1803/Desktop/folder/CADD_pgms/U
 ; W22      ; 283        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y1       ; 129        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y2       ; 131        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y3       ; 149        ; 3        ; reset                                          ; input  ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y3       ; 149        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y4       ; 151        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y5       ; 137        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y6       ; 139        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -1257,37 +1260,40 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 ; Pin Name ; Reason                        ;
 +----------+-------------------------------+
-; q        ; Incomplete set of assignments ;
-; d        ; Incomplete set of assignments ;
-; reset    ; Incomplete set of assignments ;
+; q[0]     ; Incomplete set of assignments ;
+; q[1]     ; Incomplete set of assignments ;
+; q[2]     ; Incomplete set of assignments ;
+; q[3]     ; Incomplete set of assignments ;
 ; clk      ; Incomplete set of assignments ;
-; q        ; Missing location assignment   ;
-; d        ; Missing location assignment   ;
-; reset    ; Missing location assignment   ;
+; q[0]     ; Missing location assignment   ;
+; q[1]     ; Missing location assignment   ;
+; q[2]     ; Missing location assignment   ;
+; q[3]     ; Missing location assignment   ;
 ; clk      ; Missing location assignment   ;
 +----------+-------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
-; |D_FF_P_SNR                ; 3 (3)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 4    ; 0            ; 2 (2)        ; 1 (1)             ; 0 (0)            ; 0          ; |D_FF_P_SNR         ; D_FF_P_SNR  ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                      ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name ; Entity Name    ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+----------------+--------------+
+; |up_count_mod10            ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 5    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0          ; |up_count_mod10     ; up_count_mod10 ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                   ;
-+-------+----------+---------------+---------------+-----------------------+-----+------+
-; Name  ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+-------+----------+---------------+---------------+-----------------------+-----+------+
-; q     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; d     ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; reset ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; clk   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-+-------+----------+---------------+---------------+-----------------------+-----+------+
++--------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                  ;
++------+----------+---------------+---------------+-----------------------+-----+------+
+; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
++------+----------+---------------+---------------+-----------------------+-----+------+
+; q[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; q[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; q[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; q[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; clk  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
++------+----------+---------------+---------------+-----------------------+-----+------+
 
 
 +---------------------------------------------------+
@@ -1295,12 +1301,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; d                   ;                   ;         ;
-;      - q~0          ; 1                 ; 6       ;
-; reset               ;                   ;         ;
-;      - q~0          ; 1                 ; 6       ;
 ; clk                 ;                   ;         ;
-;      - q~reg0       ; 0                 ; 0       ;
 +---------------------+-------------------+---------+
 
 
@@ -1309,8 +1310,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
-; clk  ; PIN_V7   ; 1       ; Clock ; no     ; --                   ; --               ; --                        ;
+; clk  ; PIN_M8   ; 4       ; Clock ; yes    ; Global Clock         ; GCLK3            ; --                        ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                            ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; clk  ; PIN_M8   ; 4       ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
++------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +-----------------------------------------------+
@@ -1318,27 +1328,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 9 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 8 / 148,641 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 5,382 ( 0 % )     ;
-; C4 interconnects      ; 7 / 106,704 ( < 1 % ) ;
+; C4 interconnects      ; 8 / 106,704 ( < 1 % ) ;
 ; Direct links          ; 1 / 148,641 ( < 1 % ) ;
-; Global clocks         ; 0 / 20 ( 0 % )        ;
-; Local interconnects   ; 0 / 49,760 ( 0 % )    ;
+; Global clocks         ; 1 / 20 ( 5 % )        ;
+; Local interconnects   ; 4 / 49,760 ( < 1 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )       ;
 ; R24 interconnects     ; 0 / 5,406 ( 0 % )     ;
-; R4 interconnects      ; 4 / 147,764 ( < 1 % ) ;
+; R4 interconnects      ; 3 / 147,764 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 1.00) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 2.50) ; Number of LABs  (Total = 2) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 3                           ;
+; 1                                          ; 1                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
-; 4                                          ; 0                           ;
+; 4                                          ; 1                           ;
 ; 5                                          ; 0                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 0                           ;
@@ -1357,7 +1367,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.33) ; Number of LABs  (Total = 3) ;
+; LAB-wide Signals  (Average = 0.50) ; Number of LABs  (Total = 2) ;
 +------------------------------------+-----------------------------+
 ; 1 Clock                            ; 1                           ;
 +------------------------------------+-----------------------------+
@@ -1366,32 +1376,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 1.33) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced  (Average = 4.50) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 2                           ;
-; 2                                           ; 1                           ;
+; 1                                           ; 1                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 2.50) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 3                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 1.33) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 0.50) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 2                           ;
+; 1                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1452,13 +1470,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000001    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000047    ; IO_000046    ; IO_000045    ; IO_000027    ; IO_000026    ; IO_000024    ; IO_000023    ; IO_000022    ; IO_000021    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 4         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 3            ; 1            ; 0            ; 3            ; 0            ; 0            ; 1            ; 0            ; 4         ; 4         ; 4         ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 5         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 1            ; 4            ; 0            ; 1            ; 0            ; 0            ; 4            ; 0            ; 5         ; 5         ; 5         ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ; 4            ; 4            ; 4            ; 4            ; 4            ; 3            ; 4            ; 4            ; 4            ; 1            ; 3            ; 4            ; 1            ; 4            ; 4            ; 3            ; 4            ; 0         ; 0         ; 0         ; 4            ; 4            ;
+; Total Inapplicable ; 5            ; 5            ; 5            ; 5            ; 5            ; 0         ; 5            ; 5            ; 5            ; 5            ; 5            ; 5            ; 5            ; 1            ; 5            ; 5            ; 5            ; 4            ; 1            ; 5            ; 4            ; 5            ; 5            ; 1            ; 5            ; 0         ; 0         ; 0         ; 5            ; 5            ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; q                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; d                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; reset              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; q[0]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; q[1]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; q[2]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; q[3]               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
@@ -1529,23 +1548,25 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 4 pins of 4 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'Unit4.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
+Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: /home/alphadelta1803/Desktop/folder/CADD_pgms/Unit4/up_count_mod10.sv Line: 3
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 4 (unused VREF, 2.5V VCCIO, 3 input, 1 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 4 (unused VREF, 2.5V VCCIO, 0 input, 4 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
         Info (176213): I/O bank number 1A does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  16 pins available
         Info (176213): I/O bank number 1B does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  20 pins available
-        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  36 pins available
+        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  35 pins available
         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  48 pins available
         Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  40 pins available
@@ -1738,7 +1759,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1759,14 +1780,14 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file /home/alphadelta1803/Desktop/folder/CADD_pgms/Unit4/output_files/Unit4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 194 warnings
-    Info: Peak virtual memory: 828 megabytes
-    Info: Processing ended: Thu Aug  3 16:25:31 2023
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Peak virtual memory: 836 megabytes
+    Info: Processing ended: Fri Aug  4 15:08:08 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +----------------------------+

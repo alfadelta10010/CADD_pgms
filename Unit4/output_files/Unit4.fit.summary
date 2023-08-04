@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Aug  3 16:25:30 2023
+Fitter Status : Successful - Fri Aug  4 15:08:08 2023
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Unit4
-Top-level Entity Name : D_FF_P_SNR
+Top-level Entity Name : up_count_mod10
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 3 / 49,760 ( < 1 % )
-    Total combinational functions : 2 / 49,760 ( < 1 % )
-    Dedicated logic registers : 1 / 49,760 ( < 1 % )
-Total registers : 1
-Total pins : 4 / 360 ( 1 % )
+Total logic elements : 5 / 49,760 ( < 1 % )
+    Total combinational functions : 5 / 49,760 ( < 1 % )
+    Dedicated logic registers : 4 / 49,760 ( < 1 % )
+Total registers : 4
+Total pins : 5 / 360 ( 1 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
