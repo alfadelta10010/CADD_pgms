@@ -11,6 +11,12 @@ binary multipliers, comparaters and basic RAM and ROM modules
 
 ## 2-bit Comparator
 - A 2-bit comparator built without using `<`, `>` and `==` operators
+- RTL Diagram
+![](2-bit_comparator/rtl.png)
+- Waveforms Diagram
+![](2-bit_comparator/waveforms.png)
+- Flow Summary
+![](2-bit_comparator/flow_summary.png)
 
 ## 32-bit RCA
 - 32-bit RCA built using structural programming
