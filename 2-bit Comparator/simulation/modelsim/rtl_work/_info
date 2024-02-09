@@ -1,0 +1,141 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pesu-ece/Desktop/CADD_project/simulation/modelsim
+vand_2
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1669886634
+!i10b 1
+!s100 P5MP0>0Ql9_fIkN]]2=>a3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Id6L=3b=1`jFDoUX9dROZF3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1669886198
+8/home/pesu-ece/Desktop/CADD_project/and_2.sv
+F/home/pesu-ece/Desktop/CADD_project/and_2.sv
+!i122 3
+Z5 L0 1 5
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1669886634.000000
+!s107 /home/pesu-ece/Desktop/CADD_project/and_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/pesu-ece/Desktop/CADD_project|/home/pesu-ece/Desktop/CADD_project/and_2.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project
+Z10 tCvgOpt 0
+vcomp1
+R1
+R2
+!i10b 1
+!s100 K9@1;aSW=BIkh<MX^5i?b2
+R3
+I`i5zn?B9BeXdRzSCGb3aT3
+R4
+S1
+R0
+w1669884677
+8/home/pesu-ece/Desktop/CADD_project/comp1.sv
+F/home/pesu-ece/Desktop/CADD_project/comp1.sv
+!i122 1
+L0 1 7
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/pesu-ece/Desktop/CADD_project/comp1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/pesu-ece/Desktop/CADD_project|/home/pesu-ece/Desktop/CADD_project/comp1.sv|
+!i113 1
+R8
+R9
+R10
+vcomp2
+R1
+R2
+!i10b 1
+!s100 NAnE6b4nREZH9oI68kPn?0
+R3
+IXJd4;GWU4]8nl2f>h9l6K3
+R4
+S1
+R0
+w1669886205
+8/home/pesu-ece/Desktop/CADD_project/comp2.sv
+F/home/pesu-ece/Desktop/CADD_project/comp2.sv
+!i122 2
+L0 1 10
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/pesu-ece/Desktop/CADD_project/comp2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/pesu-ece/Desktop/CADD_project|/home/pesu-ece/Desktop/CADD_project/comp2.sv|
+!i113 1
+R8
+R9
+R10
+vcomp2_test
+R1
+R2
+!i10b 1
+!s100 RYnlVjI[L]fh00Y7Hjd_[2
+R3
+Io:F1ER==4c?e:0X[a^3hc3
+R4
+S1
+R0
+w1669886579
+8/home/pesu-ece/Desktop/CADD_project/comp2_test.sv
+F/home/pesu-ece/Desktop/CADD_project/comp2_test.sv
+!i122 4
+L0 1 27
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/pesu-ece/Desktop/CADD_project/comp2_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/pesu-ece/Desktop/CADD_project|/home/pesu-ece/Desktop/CADD_project/comp2_test.sv|
+!i113 1
+R8
+R9
+R10
+vor_2
+R1
+R2
+!i10b 1
+!s100 8T<f@^n_Ok<kO[fI`d9Un2
+R3
+IL_[Hb6TT9W2G2I3IlBgR`0
+R4
+S1
+R0
+w1669882212
+8/home/pesu-ece/Desktop/CADD_project/or_2.sv
+F/home/pesu-ece/Desktop/CADD_project/or_2.sv
+!i122 0
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/pesu-ece/Desktop/CADD_project/or_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/pesu-ece/Desktop/CADD_project|/home/pesu-ece/Desktop/CADD_project/or_2.sv|
+!i113 1
+R8
+R9
+R10

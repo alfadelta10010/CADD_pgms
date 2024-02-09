@@ -1,0 +1,25 @@
+|comp2w
+a[0] => g.IN0
+a[0] => g.IN0
+a[0] => e.IN0
+a[0] => l.IN1
+a[0] => l.IN0
+a[1] => g.IN0
+a[1] => g.IN1
+a[1] => e.IN0
+a[1] => l.IN1
+a[1] => l.IN0
+b[0] => l.IN1
+b[0] => l.IN0
+b[0] => e.IN1
+b[0] => g.IN1
+b[1] => l.IN1
+b[1] => l.IN1
+b[1] => e.IN1
+b[1] => g.IN1
+b[1] => g.IN1
+g << g.DB_MAX_OUTPUT_PORT_TYPE
+e << e.DB_MAX_OUTPUT_PORT_TYPE
+l << l.DB_MAX_OUTPUT_PORT_TYPE
+
+

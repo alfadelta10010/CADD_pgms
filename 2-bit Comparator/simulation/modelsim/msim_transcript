@@ -1,0 +1,83 @@
+# do project_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/pesu-ece/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project {/home/pesu-ece/Desktop/CADD_project/or_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:54 on Dec 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/pesu-ece/Desktop/CADD_project" /home/pesu-ece/Desktop/CADD_project/or_2.sv 
+# -- Compiling module or_2
+# 
+# Top level modules:
+# 	or_2
+# End time: 14:53:54 on Dec 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project {/home/pesu-ece/Desktop/CADD_project/comp1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:54 on Dec 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/pesu-ece/Desktop/CADD_project" /home/pesu-ece/Desktop/CADD_project/comp1.sv 
+# -- Compiling module comp1
+# 
+# Top level modules:
+# 	comp1
+# End time: 14:53:54 on Dec 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project {/home/pesu-ece/Desktop/CADD_project/comp2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:54 on Dec 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/pesu-ece/Desktop/CADD_project" /home/pesu-ece/Desktop/CADD_project/comp2.sv 
+# -- Compiling module comp2
+# 
+# Top level modules:
+# 	comp2
+# End time: 14:53:54 on Dec 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project {/home/pesu-ece/Desktop/CADD_project/and_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:54 on Dec 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/pesu-ece/Desktop/CADD_project" /home/pesu-ece/Desktop/CADD_project/and_2.sv 
+# -- Compiling module and_2
+# 
+# Top level modules:
+# 	and_2
+# End time: 14:53:54 on Dec 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+/home/pesu-ece/Desktop/CADD_project {/home/pesu-ece/Desktop/CADD_project/comp2_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:54 on Dec 01,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/pesu-ece/Desktop/CADD_project" /home/pesu-ece/Desktop/CADD_project/comp2_test.sv 
+# -- Compiling module comp2_test
+# 
+# Top level modules:
+# 	comp2_test
+# End time: 14:53:54 on Dec 01,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  comp2_test
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" comp2_test 
+# Start time: 14:53:54 on Dec 01,2022
+# Loading sv_std.std
+# Loading work.comp2_test
+# Loading work.comp2
+# Loading work.comp1
+# Loading work.or_2
+# Loading work.and_2
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# 
+# stdin: <EOF>
+# End time: 15:19:28 on Dec 01,2022, Elapsed time: 0:25:34
+# Errors: 0, Warnings: 0

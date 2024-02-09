@@ -1,0 +1,15 @@
+Project statement:
+Compares 2 bit signals and asserts if the former one is greater
+
+Needed:
+- Aim
+- Diagram (Truth table)
+- Internal Diagram
+- Technology and RTL schematic
+- Code
+- Timing Area and Power report
+
+To do:
+- Make a comparator
+- Make it 2 bit
+- Make a testbench for A > B

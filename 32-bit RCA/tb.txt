@@ -1,0 +1,26 @@
+module FA_32_tb();
+reg [31:0] a,b;
+reg ci;
+wire [31:0] s;
+wire co;
+
+FA_32 dut(a,b,ci,s,co);
+
+initial 
+	begin
+		a=32'b0; b=32'b1; ci=1'b0; #20;
+		a=32'b1; ci=1'b1; #20;
+	end 
+endmodule
+
+
+https://technobyte.org/2-bit-4-bit-comparator/#How_to_design_a_2-bit_comparator
+
+# a !> b for 00, 00
+# a !> b for 00, 01
+# a !> b for 00, 10
+# a !> b for 00, 11
+# a > b for 11, 00
+# a > b for 11, 01
+# a > b for 11, 10
+# a !> b for 11, 11

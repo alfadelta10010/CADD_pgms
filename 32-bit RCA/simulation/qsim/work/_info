@@ -1,0 +1,178 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Drive_D/GARIMA_PES/3RD_SEM/CADD/project/simulation/qsim
+vFA_1
+Z1 !s110 1669706614
+!i10b 1
+!s100 ^Pz9adOQjRiijONGkc6R>3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IG2V:<PYO5zPX51zfLA^S?2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1669706612
+Z5 832bit_adder.vo
+Z6 F32bit_adder.vo
+!i122 24
+L0 32 250
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1669706614.000000
+Z9 !s107 32bit_adder.vo|
+Z10 !s90 -work|work|32bit_adder.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@f@a_1
+vFA_1_vlg_vec_tst
+R1
+!i10b 1
+!s100 [^@87I=UG6A]KMfnHLPL<2
+R2
+ISnNl=:z[9EM0F?0XO5J320
+R3
+R0
+w1669706611
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+!i122 25
+L0 30 51
+R7
+r1
+!s85 0
+31
+R8
+Z15 !s107 Waveform.vwf.vt|
+Z16 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@f@a_1_vlg_vec_tst
+vHA
+Z17 !s110 1669704142
+!i10b 1
+!s100 dgTE62;N33MfQgY@mAPX_3
+R2
+IlUcVOcAR3<oHQ5gOYDWmI2
+R3
+R0
+w1669704140
+R5
+R6
+!i122 14
+L0 32 234
+R7
+r1
+!s85 0
+31
+Z18 !s108 1669704142.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@h@a
+vHA_vlg_vec_tst
+R17
+!i10b 1
+!s100 iCbN>4nId:WhbD4UX^VmR3
+R2
+IoT;gFUR;;CN6A?AhgikRK3
+R3
+R0
+w1669704139
+R13
+R14
+!i122 15
+L0 30 40
+R7
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R11
+R12
+n@h@a_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 E1d=8WB1nIKJ9f=hEo]K;1
+R2
+IP@LD5mhfz7Nb1_QY=D7N]3
+R3
+R0
+R4
+R5
+R6
+!i122 24
+L0 283 45
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vOr_1
+Z19 !s110 1669703693
+!i10b 1
+!s100 ^zllXedZWno6>eTzgWzbW3
+R2
+IThf:o6gCMJbZ;2[n?Oc0_3
+R3
+R0
+w1669703692
+R5
+R6
+!i122 4
+L0 32 197
+R7
+r1
+!s85 0
+31
+Z20 !s108 1669703693.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@or_1
+vOr_1_vlg_vec_tst
+R19
+!i10b 1
+!s100 >NeSW3Idhg^^^;djW=zQB1
+R2
+I<a>^MMg:SdF_kRWb<@=Rb1
+R3
+R0
+w1669703690
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+!i122 5
+L0 30 36
+R7
+r1
+!s85 0
+31
+R20
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R11
+R12
+n@or_1_vlg_vec_tst

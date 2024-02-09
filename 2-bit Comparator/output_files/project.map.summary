@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Dec  2 06:23:39 2022
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Revision Name : project
+Top-level Entity Name : comp2w
+Family : MAX 10
+Total logic elements : 3
+    Total combinational functions : 3
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
